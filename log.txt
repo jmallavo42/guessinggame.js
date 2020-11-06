@@ -1,0 +1,35 @@
+The first thing I want to do is ask a user to enter in their maximum number.
+Prompt "enter the maximum number the maximum number and  save that to a variable.
+There's a possibility that the user will enter something in that it's not actually a number even though everything is going to be a string technically.
+to check and make sure that a user has actually entered something in that is valid and
+that can be passed.
+So parseInt on whatever we got from prompting the user 
+
+Generate a random number  and multiply by maximum  then floor the entire thing then add one at
+the end. Save that in a variable const target num.
+
+Anytime we do math with NaN, we get NaN, so to make sure that we actually get a valid maximum that is a number before we can move on to the next line. 
+Instead of using IF, use while loop to constantly check or ask if there's not a maximum and remember that not a number is falsey.
+So while there's a falsey, Max, just update Max and keep asking.
+Print out the targetNum
+Technically, it will also screen out zero because zero is considered falsey
+
+All right, so now I want to actually make the game, so now that you have picked your numbers, the
+maximum number and we have our own random number, your target here, what we want to do is ask you to enter a guess.
+And then as long as that guess is incorrect, we're going to tell you if it's too high or too low.
+
+So to get that guess, prompt Enter your first guess 
+parseInt the prompt  because the guess is going to be a string and were comparing guess and target number which is a number and not a string. 
+Let's keep track of the number of attempts that it takes you, the number of guesses.  create a variable then call it attempts and starts at one, because that's the bare minimum.
+
+ then we'll write a while loop while your guess is not equal to targetnum 
+Then if user quits, if guess = q then break.
+and everytime you make it in this loop we just add one because the fact that you’ve made it into this loop means that youre guessing again.
+
+And while they are not the same,  check if your guess is greater than targetnum then prompt user again "too high enter a new guess" and save that to our guess variable and then ELSE prompt "too low enter a new guess" 
+When comparing guess is not equal to targetnum, parseint the guess
+
+Add a conditional at the end, if guess equals q, console.log ok you quit 
+else display congrats you win and display a string template literal  you got it it took you attempts guesses
+
+So were just checking to see what guess is equal to after the entire while loop finishes
